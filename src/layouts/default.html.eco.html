@@ -1,6 +1,7 @@
 <html>
 <head>
     <title><%= @document.title %> | My Website</title>
+    <title><%= if @document.title then "#{@document.title} | Submittable" else "Submittable" %></title>
     <%- @getBlock("meta").toHTML() %>
    	<%- @getBlock("styles").add(["/styles/style.css"]).toHTML() %>
 </head>
