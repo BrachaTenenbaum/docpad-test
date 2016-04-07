@@ -4,4 +4,4 @@ layout: "default"
 isPage: true
 ---
 
-<p>Lorum Ipsum About page</p>
+Lorum Ipsum About page

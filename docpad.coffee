@@ -3,11 +3,11 @@
 
 # Define the DocPad Configuration
 docpadConfig = {
-	  templateData:
+    templateData:
         site:
             title: "Submittable"
-            
-            getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
+
+        getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
 }
 
 # Export the DocPad Configuration
