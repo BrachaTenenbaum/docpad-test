@@ -6,7 +6,7 @@
 </head>
 <body>
 	<img src="/images/submittable-logo-02.png" />
-	<ul>
+	<ul class="navbar">
 	    <% for page in @getCollection("pages").toJSON(): %>
 	        <li class="<%= if page.id is @document.id then 'active' else 'inactive' %>">
 	            <a href="<%= page.url %>">
@@ -15,6 +15,7 @@
 	        </li>
 	    <% end %>
 	</ul>
+	<hr>
     <h1><%= @document.title %></h1>
     <%- @content %>
     <%- @getBlock("scripts").add(["/vendor/jquery.js","/scripts/script.js"]).toHTML() %>
